@@ -21,7 +21,7 @@ print(Fore.CYAN + """
     | |\/| | | | | | \ \ / / _` |/ _` | | |    | '_ \ / _ \/ __| |/ / _ \ '__|
     | |  | | |_| | | |\ V / (_| | (_| | | |____| | | |  __/ (__|   <  __/ |   
     |_|  |_|\__,_|_|_| \_/ \__,_|\__,_|  \_____|_| |_|\___|\___|_|\_\___|_|   
-          Version 1.1
+          Version 1.2
 
       1.Proxyless Version
       2.Normal Version (Coming Soon...)                                                                  
@@ -60,9 +60,10 @@ if op == '1':
             hits.write(f"[Hit]: {num} | Checker Made By ISellStuf\n")
         else:
             print(Fore.RED + f"[!] Invalid Number: {num}")
-    input("Hits Were Sent To Hits.txt....")
+    
     file = open('combo.txt','r').readlines()
     for i in file:
         seq = i.strip()
         acc = seq.split(' ')
         login(acc[0])
+    input("Hits Were Sent To Hits.txt....")
